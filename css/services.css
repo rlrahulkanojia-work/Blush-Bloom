@@ -1,0 +1,624 @@
+/* 
+   Blush and Bloom - Services Stylesheet
+   This stylesheet contains styles specific to the services page
+*/
+
+/* ===== PAGE BANNER ===== */
+.page-banner {
+    height: 40vh;
+    min-height: 300px;
+    background: linear-gradient(rgba(93, 73, 84, 0.7), rgba(93, 73, 84, 0.7)), url('https://source.unsplash.com/random/1920x1080/?makeup,services') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 8rem;
+}
+
+.banner-content {
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.banner-title {
+    font-family: var(--font-primary);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.banner-subtitle {
+    font-family: var(--font-accent);
+    font-size: 3rem;
+    opacity: 0.9;
+}
+
+/* ===== SERVICES NAVIGATION ===== */
+.services-nav {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.services-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 1.5rem 3rem;
+    font-family: var(--font-secondary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-charcoal);
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-rose-gold);
+    transition: var(--transition);
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    color: var(--color-rose-gold);
+}
+
+.tab-btn:hover::after,
+.tab-btn.active::after {
+    width: 100%;
+}
+
+.services-tab-content {
+    display: none;
+}
+
+.services-tab-content.active {
+    display: block;
+}
+
+/* ===== SERVICE CATEGORIES ===== */
+.service-category {
+    margin-bottom: 8rem;
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.category-icon {
+    font-size: 4rem;
+    color: var(--color-rose-gold);
+    margin-bottom: 1.5rem;
+}
+
+.category-title {
+    font-family: var(--font-primary);
+    font-size: 3.2rem;
+    color: var(--color-plum);
+    margin-bottom: 1.5rem;
+}
+
+.category-description {
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-charcoal);
+}
+
+/* ===== SERVICE PACKAGES ===== */
+.service-packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.package-card.featured {
+    border: 2px solid var(--color-rose-gold);
+    transform: scale(1.05);
+}
+
+.package-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.package-badge {
+    position: absolute;
+    top: 2rem;
+    right: -4rem;
+    background-color: var(--color-rose-gold);
+    color: white;
+    padding: 0.8rem 5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.package-header {
+    background-color: var(--color-plum);
+    color: white;
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.package-title {
+    font-family: var(--font-primary);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.package-price {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--color-blush);
+}
+
+.package-content {
+    padding: 3rem 2rem;
+}
+
+.package-features {
+    margin-bottom: 3rem;
+}
+
+.package-features li {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.package-features li i {
+    color: var(--color-rose-gold);
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+}
+
+.package-card .btn {
+    width: 100%;
+}
+
+/* ===== ADD-ONS SECTION ===== */
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.addon-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.addon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.addon-icon {
+    font-size: 3rem;
+    color: var(--color-rose-gold);
+    margin-bottom: 1.5rem;
+}
+
+.addon-title {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--color-plum);
+    margin-bottom: 1rem;
+}
+
+.addon-price {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-rose-gold);
+    margin-bottom: 1.5rem;
+}
+
+.addon-description {
+    color: var(--color-charcoal);
+    font-size: 1.5rem;
+}
+
+/* ===== SUBSCRIPTION SECTION ===== */
+.subscription-intro {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.subscription-intro h2 {
+    font-family: var(--font-primary);
+    font-size: 3.2rem;
+    color: var(--color-plum);
+    margin-bottom: 1.5rem;
+}
+
+.subscription-intro p {
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-charcoal);
+}
+
+.subscription-packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-bottom: 8rem;
+}
+
+.subscription-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+
+.subscription-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-card.featured {
+    border: 2px solid var(--color-rose-gold);
+    transform: scale(1.05);
+}
+
+.subscription-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.subscription-badge {
+    position: absolute;
+    top: 2rem;
+    right: -4rem;
+    background-color: var(--color-rose-gold);
+    color: white;
+    padding: 0.8rem 5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.subscription-header {
+    background-color: var(--color-plum);
+    color: white;
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.subscription-title {
+    font-family: var(--font-primary);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.subscription-price {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--color-blush);
+}
+
+.subscription-content {
+    padding: 3rem 2rem;
+}
+
+.subscription-features {
+    margin-bottom: 2rem;
+}
+
+.subscription-features li {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.subscription-features li i {
+    color: var(--color-rose-gold);
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+}
+
+.subscription-note {
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--color-charcoal);
+}
+
+.subscription-card .btn {
+    width: 100%;
+}
+
+/* ===== LOYALTY PROGRAM ===== */
+.loyalty-program {
+    background-color: var(--color-cream);
+    border-radius: var(--border-radius);
+    padding: 5rem;
+    margin-bottom: 5rem;
+}
+
+.loyalty-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.loyalty-icon {
+    font-size: 4rem;
+    color: var(--color-rose-gold);
+    margin-bottom: 1.5rem;
+}
+
+.loyalty-header h2 {
+    font-family: var(--font-primary);
+    font-size: 3.2rem;
+    color: var(--color-plum);
+    margin-bottom: 1.5rem;
+}
+
+.loyalty-header p {
+    font-size: 1.8rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-charcoal);
+}
+
+.loyalty-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.tier-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.tier-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tier-card.featured {
+    border: 2px solid var(--color-rose-gold);
+}
+
+.tier-header {
+    background-color: var(--color-plum);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.tier-header h3 {
+    font-family: var(--font-primary);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tier-header p {
+    font-size: 1.6rem;
+    opacity: 0.9;
+}
+
+.tier-content {
+    padding: 2rem;
+}
+
+.tier-benefits li {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.tier-benefits li i {
+    color: var(--color-rose-gold);
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+}
+
+.loyalty-rewards {
+    text-align: center;
+}
+
+.loyalty-rewards h3 {
+    font-family: var(--font-primary);
+    font-size: 2.4rem;
+    color: var(--color-plum);
+    margin-bottom: 3rem;
+}
+
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.reward-item {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.reward-points {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-rose-gold);
+    margin-bottom: 1rem;
+}
+
+.reward-description {
+    color: var(--color-charcoal);
+}
+
+/* ===== FAQ SECTION ===== */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background-color: white;
+}
+
+.faq-question {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background-color: var(--color-cream);
+}
+
+.faq-question h3 {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    color: var(--color-plum);
+}
+
+.faq-toggle {
+    font-size: 1.8rem;
+    color: var(--color-rose-gold);
+    transition: var(--transition);
+}
+
+.faq-answer {
+    padding: 0 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 2rem 2rem;
+    max-height: 500px;
+}
+
+.faq-item.active .faq-toggle i {
+    transform: rotate(45deg);
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 992px) {
+    .banner-title {
+        font-size: 4rem;
+    }
+    
+    .banner-subtitle {
+        font-size: 2.5rem;
+    }
+    
+    .loyalty-program {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .banner-title {
+        font-size: 3.5rem;
+    }
+    
+    .banner-subtitle {
+        font-size: 2.2rem;
+    }
+    
+    .category-title {
+        font-size: 2.8rem;
+    }
+    
+    .subscription-card.featured,
+    .package-card.featured {
+        transform: scale(1);
+    }
+    
+    .subscription-card.featured:hover,
+    .package-card.featured:hover {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .service-packages,
+    .subscription-packages,
+    .loyalty-tiers {
+        grid-template-columns: 1fr;
+    }
+    
+    .addons-grid,
+    .rewards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    
+    .banner-title {
+        font-size: 3rem;
+    }
+    
+    .banner-subtitle {
+        font-size: 2rem;
+    }
+    
+    .loyalty-program {
+        padding: 2rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1.6rem;
+    }
+}

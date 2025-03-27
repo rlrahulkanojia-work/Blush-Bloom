@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Blush and Bloom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1><span class="logo-text">BLUSH</span> <span class="logo-and">&</span> <span class="logo-text">BLOOM</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <div class="banner-content">
+                <h1 class="banner-title">Our Portfolio</h1>
+                <p class="banner-subtitle">Showcasing Our Artistry</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery -->
+        <section class="portfolio section">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="bridal">Bridal</button>
+                    <button class="filter-btn" data-filter="pre-wedding">Pre-Wedding</button>
+                    <button class="filter-btn" data-filter="custom">Special Occasions</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Bridal Category -->
+                    <div class="portfolio-item bridal">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?bride,makeup,1" alt="Traditional Bridal Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Traditional Bridal</h3>
+                                    <p>Elegant and timeless bridal look</p>
+                                    <a href="#" class="portfolio-link" data-category="bridal" data-id="1">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item bridal">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?bride,makeup,2" alt="Modern Bridal Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Modern Bridal</h3>
+                                    <p>Contemporary bridal makeup with a fresh twist</p>
+                                    <a href="#" class="portfolio-link" data-category="bridal" data-id="2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item bridal">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?bride,makeup,3" alt="Minimalist Bridal Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Minimalist Bridal</h3>
+                                    <p>Subtle enhancement for the natural bride</p>
+                                    <a href="#" class="portfolio-link" data-category="bridal" data-id="3">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item bridal">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?bride,makeup,4" alt="Cultural Bridal Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Cultural Bridal</h3>
+                                    <p>Traditional cultural elements with modern techniques</p>
+                                    <a href="#" class="portfolio-link" data-category="bridal" data-id="4">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pre-Wedding Category -->
+                    <div class="portfolio-item pre-wedding">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?engagement,makeup,1" alt="Engagement Shoot Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Engagement Shoot</h3>
+                                    <p>Camera-ready makeup for engagement photos</p>
+                                    <a href="#" class="portfolio-link" data-category="pre-wedding" data-id="5">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item pre-wedding">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?engagement,makeup,2" alt="Themed Photoshoot Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Themed Photoshoot</h3>
+                                    <p>Creative makeup for themed pre-wedding shoots</p>
+                                    <a href="#" class="portfolio-link" data-category="pre-wedding" data-id="6">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item pre-wedding">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?engagement,makeup,3" alt="Destination Pre-Wedding Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Destination Pre-Wedding</h3>
+                                    <p>Weather-appropriate makeup for destination shoots</p>
+                                    <a href="#" class="portfolio-link" data-category="pre-wedding" data-id="7">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom/Special Occasions Category -->
+                    <div class="portfolio-item custom">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?party,makeup,1" alt="Party Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Party Glam</h3>
+                                    <p>Glamorous makeup for special celebrations</p>
+                                    <a href="#" class="portfolio-link" data-category="custom" data-id="8">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item custom">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?gala,makeup,1" alt="Gala Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Gala Event</h3>
+                                    <p>Sophisticated makeup for formal events</p>
+                                    <a href="#" class="portfolio-link" data-category="custom" data-id="9">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item custom">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?prom,makeup,1" alt="Prom Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Prom Night</h3>
+                                    <p>Age-appropriate glamour for prom</p>
+                                    <a href="#" class="portfolio-link" data-category="custom" data-id="10">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item custom">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?editorial,makeup,1" alt="Editorial Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Editorial</h3>
+                                    <p>Creative makeup for photoshoots and editorials</p>
+                                    <a href="#" class="portfolio-link" data-category="custom" data-id="11">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item custom">
+                        <div class="portfolio-image">
+                            <img src="https://source.unsplash.com/random/600x800/?celebrity,makeup,1" alt="Celebrity-Inspired Makeup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Celebrity-Inspired</h3>
+                                    <p>Recreating iconic celebrity looks</p>
+                                    <a href="#" class="portfolio-link" data-category="custom" data-id="12">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before/After Section -->
+        <section class="before-after section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Transformations</h2>
+                    <p class="section-subtitle">Before & After</p>
+                </div>
+
+                <div class="transformation-grid">
+                    <div class="transformation-item">
+                        <div class="transformation-images">
+                            <div class="before">
+                                <img src="https://source.unsplash.com/random/500x600/?woman,face,1" alt="Before Transformation">
+                                <span class="label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="https://source.unsplash.com/random/500x600/?makeup,glamour,1" alt="After Transformation">
+                                <span class="label">After</span>
+                            </div>
+                        </div>
+                        <div class="transformation-info">
+                            <h3>Bridal Transformation</h3>
+                            <p>Natural beauty enhanced with soft bridal makeup</p>
+                        </div>
+                    </div>
+
+                    <div class="transformation-item">
+                        <div class="transformation-images">
+                            <div class="before">
+                                <img src="https://source.unsplash.com/random/500x600/?woman,face,2" alt="Before Transformation">
+                                <span class="label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="https://source.unsplash.com/random/500x600/?makeup,glamour,2" alt="After Transformation">
+                                <span class="label">After</span>
+                            </div>
+                        </div>
+                        <div class="transformation-info">
+                            <h3>Evening Glam Transformation</h3>
+                            <p>Dramatic evening look with smokey eyes</p>
+                        </div>
+                    </div>
+
+                    <div class="transformation-item">
+                        <div class="transformation-images">
+                            <div class="before">
+                                <img src="https://source.unsplash.com/random/500x600/?woman,face,3" alt="Before Transformation">
+                                <span class="label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="https://source.unsplash.com/random/500x600/?makeup,glamour,3" alt="After Transformation">
+                                <span class="label">After</span>
+                            </div>
+                        </div>
+                        <div class="transformation-info">
+                            <h3>Natural Day Look</h3>
+                            <p>Fresh-faced beauty for everyday elegance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technique Showcase -->
+        <section class="techniques section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Makeup Techniques</h2>
+                    <p class="section-subtitle">The Art Behind the Beauty</p>
+                </div>
+
+                <div class="techniques-grid">
+                    <div class="technique-item">
+                        <div class="technique-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,eyes,1" alt="Eye Makeup Technique">
+                        </div>
+                        <div class="technique-info">
+                            <h3>Eye Artistry</h3>
+                            <p>Detailed eye makeup techniques including cut crease, halo eye, and smokey eye variations.</p>
+                        </div>
+                    </div>
+
+                    <div class="technique-item">
+                        <div class="technique-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,lips,1" alt="Lip Makeup Technique">
+                        </div>
+                        <div class="technique-info">
+                            <h3>Perfect Pout</h3>
+                            <p>Lip techniques including ombré lips, overlining, and long-lasting application methods.</p>
+                        </div>
+                    </div>
+
+                    <div class="technique-item">
+                        <div class="technique-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,face,1" alt="Skin Perfecting Technique">
+                        </div>
+                        <div class="technique-info">
+                            <h3>Flawless Complexion</h3>
+                            <p>Skin perfecting techniques including color correction, contouring, and highlighting.</p>
+                        </div>
+                    </div>
+
+                    <div class="technique-item">
+                        <div class="technique-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,lashes,1" alt="Lash Application Technique">
+                        </div>
+                        <div class="technique-info">
+                            <h3>Lash Enhancement</h3>
+                            <p>Lash application techniques including strip lashes, individual lashes, and lash lifting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Detail Modal -->
+        <div class="portfolio-modal" id="portfolioModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready for Your Transformation?</h2>
+                    <p class="cta-text">Book your appointment today and let us create a look that's uniquely you.</p>
+                    <a href="contact.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span class="logo-text">BLUSH</span> <span class="logo-and">&</span> <span class="logo-text">BLOOM</span></h2>
+                    <p class="footer-tagline">Unveil Your Radiance</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Navigation</h3>
+                        <ul class="footer-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-nav">
+                            <li><a href="services.html#bridal">Bridal Makeup</a></li>
+                            <li><a href="services.html#pre-wedding">Pre-Wedding</a></li>
+                            <li><a href="services.html#special">Special Occasions</a></li>
+                            <li><a href="services.html#subscription">Subscription Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Contact</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-envelope"></i> hello@blushandbloom.com</li>
+                            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Beauty Lane, Suite 100<br>Makeup City, MC 12345</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="copyright">&copy; 2025 Blush and Bloom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

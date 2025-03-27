@@ -1,0 +1,664 @@
+/* 
+   Blush and Bloom - About Stylesheet
+   This stylesheet contains styles specific to the about page
+*/
+
+/* ===== PAGE BANNER ===== */
+.page-banner {
+    height: 40vh;
+    min-height: 300px;
+    background: linear-gradient(rgba(93, 73, 84, 0.7), rgba(93, 73, 84, 0.7)), url('https://source.unsplash.com/random/1920x1080/?makeup,about') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 8rem;
+}
+
+.banner-content {
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.banner-title {
+    font-family: var(--font-primary);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.banner-subtitle {
+    font-family: var(--font-accent);
+    font-size: 3rem;
+    opacity: 0.9;
+}
+
+/* ===== ABOUT NAVIGATION ===== */
+.about-nav {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.about-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.tab-link {
+    padding: 1rem 2rem;
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-charcoal);
+    position: relative;
+    transition: var(--transition);
+}
+
+.tab-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-rose-gold);
+    transition: var(--transition);
+}
+
+.tab-link:hover,
+.tab-link.active {
+    color: var(--color-rose-gold);
+}
+
+.tab-link:hover::after,
+.tab-link.active::after {
+    width: 100%;
+}
+
+/* ===== ABOUT SECTIONS ===== */
+.about-section {
+    padding: 8rem 0;
+}
+
+.about-section.bg-light {
+    background-color: var(--color-cream);
+}
+
+/* ===== FOUNDER SECTION ===== */
+.founder-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.founder-image {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.founder-image img {
+    width: 100%;
+    height: auto;
+    transition: var(--transition);
+}
+
+.founder-image:hover img {
+    transform: scale(1.05);
+}
+
+.founder-text h3 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: var(--color-plum);
+    margin-bottom: 0.5rem;
+}
+
+.founder-title {
+    font-size: 1.8rem;
+    color: var(--color-rose-gold);
+    margin-bottom: 2.5rem;
+}
+
+.founder-story {
+    margin-bottom: 3rem;
+}
+
+.founder-story p {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 1.7;
+}
+
+.founder-story p:last-child {
+    margin-bottom: 0;
+}
+
+.founder-credentials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.credential {
+    display: flex;
+    align-items: flex-start;
+}
+
+.credential i {
+    color: var(--color-rose-gold);
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+.credential p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* ===== TEAM SECTION ===== */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+    overflow: hidden;
+    height: 350px;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.member-info {
+    padding: 2.5rem;
+}
+
+.member-info h3 {
+    font-family: var(--font-primary);
+    font-size: 2.2rem;
+    color: var(--color-plum);
+    margin-bottom: 0.5rem;
+}
+
+.member-title {
+    font-size: 1.6rem;
+    color: var(--color-rose-gold);
+    margin-bottom: 1.5rem;
+}
+
+.member-description {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.member-specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.member-specialties span {
+    background-color: var(--color-cream);
+    color: var(--color-plum);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* ===== PHILOSOPHY SECTION ===== */
+.philosophy-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.philosophy-intro {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.philosophy-principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.principle {
+    display: flex;
+    align-items: flex-start;
+}
+
+.principle-icon {
+    font-size: 3rem;
+    color: var(--color-rose-gold);
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+
+.principle-content h3 {
+    font-family: var(--font-primary);
+    font-size: 2.2rem;
+    color: var(--color-plum);
+    margin-bottom: 1rem;
+}
+
+.principle-content p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.philosophy-quote {
+    background-color: var(--color-cream);
+    border-left: 5px solid var(--color-rose-gold);
+    padding: 3rem;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    margin-top: 5rem;
+}
+
+.philosophy-quote p {
+    font-family: var(--font-primary);
+    font-size: 2.2rem;
+    font-style: italic;
+    color: var(--color-plum);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.philosophy-quote cite {
+    font-size: 1.6rem;
+    color: var(--color-rose-gold);
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* ===== PRODUCTS SECTION ===== */
+.products-intro {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.brand-item {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.brand-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.brand-item h3 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--color-plum);
+    margin-bottom: 1rem;
+}
+
+.brand-item p {
+    font-size: 1.5rem;
+    color: var(--color-charcoal);
+}
+
+.product-philosophy {
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    box-shadow: var(--shadow);
+}
+
+.product-philosophy h3 {
+    font-family: var(--font-primary);
+    font-size: 2.4rem;
+    color: var(--color-plum);
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.product-principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.product-principle {
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-principle i {
+    color: var(--color-rose-gold);
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+.product-principle p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.products-note {
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+}
+
+.contact-methods {
+    margin-bottom: 4rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.method-icon {
+    background-color: var(--color-rose-gold);
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+
+.method-details h3 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--color-plum);
+    margin-bottom: 0.5rem;
+}
+
+.method-details p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.hours, .response-time {
+    font-size: 1.4rem;
+    color: var(--color-rose-gold);
+    margin-top: 0.5rem;
+}
+
+.social-connect h3 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--color-plum);
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    background-color: var(--color-cream);
+    color: var(--color-plum);
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--color-rose-gold);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.contact-form-container {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 4rem;
+    box-shadow: var(--shadow);
+}
+
+.contact-form-container h3 {
+    font-family: var(--font-primary);
+    font-size: 2.4rem;
+    color: var(--color-plum);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-plum);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--color-rose-gold);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(183, 110, 121, 0.2);
+}
+
+.file-note {
+    font-size: 1.3rem;
+    color: var(--color-charcoal);
+    margin-top: 0.5rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+}
+
+.checkbox-group label {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.form-submit {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.form-submit .btn {
+    padding: 1.5rem 4rem;
+}
+
+/* ===== MAP SECTION ===== */
+.map-section {
+    height: 450px;
+}
+
+.map-container {
+    height: 100%;
+}
+
+.map-container iframe {
+    height: 100%;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 992px) {
+    .founder-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    
+    .philosophy-principles {
+        grid-template-columns: 1fr;
+    }
+    
+    .banner-title {
+        font-size: 4rem;
+    }
+    
+    .banner-subtitle {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-link {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .banner-title {
+        font-size: 3.5rem;
+    }
+    
+    .banner-subtitle {
+        font-size: 2.2rem;
+    }
+    
+    .form-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+    
+    .form-submit {
+        grid-column: span 1;
+    }
+    
+    .contact-form-container {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-grid,
+    .brands-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .banner-title {
+        font-size: 3rem;
+    }
+    
+    .banner-subtitle {
+        font-size: 2rem;
+    }
+    
+    .philosophy-quote {
+        padding: 2rem;
+    }
+    
+    .philosophy-quote p {
+        font-size: 1.8rem;
+    }
+    
+    .product-principles {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Tips | Blush and Bloom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1><span class="logo-text">BLUSH</span> <span class="logo-and">&</span> <span class="logo-text">BLOOM</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <div class="banner-content">
+                <h1 class="banner-title">Blog & Tips</h1>
+                <p class="banner-subtitle">Beauty Insights & Inspiration</p>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories section">
+            <div class="container">
+                <div class="categories-container">
+                    <button class="category-btn active" data-category="all">All Posts</button>
+                    <button class="category-btn" data-category="tutorials">Makeup Tutorials</button>
+                    <button class="category-btn" data-category="skincare">Skincare Advice</button>
+                    <button class="category-btn" data-category="trends">Seasonal Trends</button>
+                    <button class="category-btn" data-category="products">Product Recommendations</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post section">
+            <div class="container">
+                <div class="featured-post-container">
+                    <div class="featured-post-image">
+                        <img src="https://source.unsplash.com/random/1200x800/?makeup,tutorial" alt="Featured Post">
+                        <div class="featured-category">Makeup Tutorials</div>
+                    </div>
+                    <div class="featured-post-content">
+                        <span class="post-date">March 15, 2025</span>
+                        <h2 class="featured-post-title">The Ultimate Guide to Bridal Makeup That Lasts All Day</h2>
+                        <p class="featured-post-excerpt">Discover professional techniques and product recommendations to ensure your bridal makeup stays flawless from the first look to the last dance.</p>
+                        <div class="post-meta">
+                            <div class="post-author">
+                                <img src="https://source.unsplash.com/random/100x100/?woman,portrait" alt="Author">
+                                <span>By Sophia Reynolds</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts section">
+            <div class="container">
+                <div class="blog-grid">
+                    <!-- Makeup Tutorials -->
+                    <article class="blog-post tutorials">
+                        <div class="post-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,eyes" alt="Blog Post">
+                            <div class="post-category">Makeup Tutorials</div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-date">March 10, 2025</span>
+                            <h3 class="post-title">5 Eye Makeup Techniques Every Beginner Should Master</h3>
+                            <p class="post-excerpt">From basic eyeshadow application to creating the perfect winged liner, these fundamental techniques will elevate your eye makeup game.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post tutorials">
+                        <div class="post-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,foundation" alt="Blog Post">
+                            <div class="post-category">Makeup Tutorials</div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-date">February 28, 2025</span>
+                            <h3 class="post-title">The Art of Foundation: Finding Your Perfect Match</h3>
+                            <p class="post-excerpt">Learn how to identify your undertone, choose the right formula for your skin type, and apply foundation for a flawless, natural finish.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Skincare Advice -->
+                    <article class="blog-post skincare">
+                        <div class="post-image">
+                            <img src="https://source.unsplash.com/random/600x400/?skincare,routine" alt="Blog Post">
+                            <div class="post-category">Skincare Advice</div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-date">March 5, 2025</span>
+                            <h3 class="post-title">Pre-Wedding Skincare Timeline: 6 Months to Glowing Skin</h3>
+                            <p class="post-excerpt">Follow this month-by-month guide to achieve your best skin ever before your wedding day, with product recommendations and professional treatments.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post skincare">
+                        <div class="post-image">
+                            <img src="https://source.unsplash.com/random/600x400/?skincare,hydration" alt="Blog Post">
+                            <div class="post-category">Skincare Advice</div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-date">February 20, 2025</span>
+                            <h3 class="post-title">Hydration Heroes: The Ultimate Guide to Moisturizers</h3>
+                            <p class="post-excerpt">Discover the different types of moisturizers, how to choose the right one for your skin type, and the best application techniques for maximum benefits.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Seasonal Trends -->
+                    <article class="blog-post trends">
+                        <div class="post-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,spring" alt="Blog Post">
+                            <div class="post-category">Seasonal Trends</div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-date">March 1, 2025</span>
+                            <h3 class="post-title">Spring 2025 Makeup Trends: Fresh Colors and Techniques</h3>
+                            <p class="post-excerpt">Explore this season's trending colors, textures, and application techniques that are dominating runways and social media.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post trends">
+                        <div class="post-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,wedding" alt="Blog Post">
+                            <div class="post-category">Seasonal Trends</div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-date">February 15, 2025</span>
+                            <h3 class="post-title">2025 Bridal Makeup Trends: What's In and What's Out</h3>
+                            <p class="post-excerpt">From subtle glam to bold statements, discover the bridal makeup trends that are defining weddings this year.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Product Recommendations -->
+                    <article class="blog-post products">
+                        <div class="post-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,products" alt="Blog Post">
+                            <div class="post-category">Product Recommendations</div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-date">February 25, 2025</span>
+                            <h3 class="post-title">10 Makeup Products Worth the Splurge (And Budget Alternatives)</h3>
+                            <p class="post-excerpt">Our makeup artists share which high-end products truly deliver results, plus budget-friendly alternatives that perform almost as well.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post products">
+                        <div class="post-image">
+                            <img src="https://source.unsplash.com/random/600x400/?makeup,brushes" alt="Blog Post">
+                            <div class="post-category">Product Recommendations</div>
+                        </div>
+                        <div class="post-content">
+                            <span class="post-date">February 10, 2025</span>
+                            <h3 class="post-title">The Essential Makeup Brush Guide: What You Need and Why</h3>
+                            <p class="post-excerpt">Navigate the overwhelming world of makeup brushes with our comprehensive guide to the essential tools every makeup kit needs.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button class="btn btn-secondary">Load More Posts</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter section bg-light">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Stay updated with our latest beauty tips, tutorials, and exclusive offers delivered straight to your inbox.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <p class="privacy-note">By subscribing, you agree to our <a href="#">Privacy Policy</a>. We promise not to spam!</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Book Your Appointment?</h2>
+                    <p class="cta-text">Contact us today to schedule your consultation and let us create a look that's uniquely you.</p>
+                    <a href="contact.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span class="logo-text">BLUSH</span> <span class="logo-and">&</span> <span class="logo-text">BLOOM</span></h2>
+                    <p class="footer-tagline">Unveil Your Radiance</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Navigation</h3>
+                        <ul class="footer-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-nav">
+                            <li><a href="services.html#bridal">Bridal Makeup</a></li>
+                            <li><a href="services.html#pre-wedding">Pre-Wedding</a></li>
+                            <li><a href="services.html#special">Special Occasions</a></li>
+                            <li><a href="services.html#subscription">Subscription Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Contact</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-envelope"></i> hello@blushandbloom.com</li>
+                            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Beauty Lane, Suite 100<br>Makeup City, MC 12345</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="copyright">&copy; 2025 Blush and Bloom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
