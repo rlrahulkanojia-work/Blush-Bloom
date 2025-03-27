@@ -252,5 +252,30 @@
     </footer>
 
     <script src="js/main.js"></script>
+    
+    <!-- Hidden form for Netlify to detect during build -->
+    <form name="contact-page" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <input type="date" name="event-date" />
+        <select name="service"></select>
+        <select name="contact-preference"></select>
+        <textarea name="message"></textarea>
+        <input type="file" name="reference-images" />
+        <input type="checkbox" name="consent" />
+    </form>
+    
+    <form name="about-page" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <input type="date" name="event-date" />
+        <select name="service"></select>
+        <select name="contact-preference"></select>
+        <textarea name="message"></textarea>
+        <input type="file" name="reference-images" />
+        <input type="checkbox" name="consent" />
+    </form>
 </body>
 </html>

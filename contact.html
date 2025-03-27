@@ -101,8 +101,9 @@
                 </div>
 
                 <div class="form-container">
-                    <form class="contact-form" action="success.html" method="POST" data-netlify="true" name="contact-page">
+                    <form class="contact-form" method="POST" netlify netlify-honeypot="bot-field" name="contact-page" action="/success.html">
                         <input type="hidden" name="form-name" value="contact-page">
+                        <input type="hidden" name="bot-field">
                         <div class="form-content">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
