@@ -12,6 +12,11 @@
 [build.processing.forms]
   success_redirect = "/success.html"
 
+# Spam prevention settings
+[spam]
+  honeypot_field = "bot-field"  # Name of the honeypot field in your forms
+  recaptcha_secret = ""  # Leave empty if not using reCAPTCHA
+
 # Headers to improve security
 [[headers]]
   for = "/*"

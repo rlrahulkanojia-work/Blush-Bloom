@@ -205,9 +205,8 @@
             <div class="container">
                 <div style="max-width: 500px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                     <h3 style="text-align: center; margin-bottom: 1.5rem; color: #5D4954;">Quick Contact Test</h3>
-                    <form method="POST" netlify netlify-honeypot="bot-field" name="contact-blush-bloom">
+                    <form name="contact-blush-bloom" method="POST" data-netlify="true" action="success.html">
                         <input type="hidden" name="form-name" value="contact-blush-bloom">
-                        <input type="hidden" name="bot-field">
                         <div style="margin-bottom: 1rem;">
                             <label for="test-name" style="display: block; margin-bottom: 0.5rem; font-size: 1.4rem;">Name</label>
                             <input type="text" id="test-name" name="name" style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1.4rem;" required>
@@ -278,7 +277,7 @@
     <script src="js/main.js"></script>
     <script src="js/form-test.js"></script>
     
-    <!-- Hidden forms for Netlify to detect during build -->
+    <!-- Hidden form for Netlify to detect during build -->
     <form name="contact-blush-bloom" netlify netlify-honeypot="bot-field" hidden>
         <input type="text" name="name" />
         <input type="email" name="email" />
@@ -289,11 +288,6 @@
         <textarea name="message"></textarea>
         <input type="file" name="reference-images" />
         <input type="checkbox" name="consent" />
-    </form>
-    
-    <form name="contact-blush-bloom" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
     </form>
 </body>
 </html>
