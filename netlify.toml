@@ -6,21 +6,11 @@
 
 # Form handling settings
 [build.processing.html]
-  pretty_urls = true
+  pretty_urls = false  # Disable pretty URLs to ensure .html extensions work
 
-# Redirect settings for form submissions
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
-  conditions = {Role = ["anonymous"]}
-
-# Success page redirect
-[[redirects]]
-  from = "/success"
-  to = "/success.html"
-  status = 200
+# Form success handling
+[build.processing.forms]
+  success_redirect = "/success.html"
 
 # Headers to improve security
 [[headers]]
@@ -30,4 +20,3 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https: data:; connect-src 'self' https:; media-src 'self' https:; object-src 'none'; frame-src 'self' https:; worker-src 'self' https:; form-action 'self' https:; base-uri 'self'; manifest-src 'self'"
