@@ -2,86 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all contact page functions
-    initContactForm();
     initFaqAccordion();
+    initFileUploadPreview();
 });
-
-// Contact Form Handling
-function initContactForm() {
-    const contactForm = document.querySelector('.contact-form');
-    
-    if (!contactForm) return;
-    
-    contactForm.addEventListener('submit', function(e) {
-        // Only prevent default if validation fails
-        if (!validateForm(this)) {
-            e.preventDefault();
-            return false;
-        }
-        
-        // If validation passes, let the form submit to Netlify
-        // Netlify will handle the form submission and redirect
-        return true;
-    });
-    
-    // Clone original form content for reset functionality
-    if (!document.querySelector('.form-content-original')) {
-        const originalFormContent = contactForm.querySelector('.form-content').cloneNode(true);
-        originalFormContent.classList.add('form-content-original');
-        originalFormContent.style.display = 'none';
-        contactForm.appendChild(originalFormContent);
-    }
-}
-
-// Form Validation
-function validateForm(form) {
-    let isValid = true;
-    
-    // Remove all existing error messages
-    const errorMessages = form.querySelectorAll('.error-message');
-    errorMessages.forEach(message => message.remove());
-    
-    // Remove error class from all inputs
-    const inputs = form.querySelectorAll('input, select, textarea');
-    inputs.forEach(input => input.classList.remove('error'));
-    
-    // Get all required inputs
-    const requiredInputs = form.querySelectorAll('[required]');
-    
-    // Check each required input
-    requiredInputs.forEach(input => {
-        if (input.value.trim() === '') {
-            showError(input, 'This field is required');
-            isValid = false;
-        } else {
-            // Additional validation for email
-            if (input.type === 'email') {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(input.value)) {
-                    showError(input, 'Please enter a valid email address');
-                    isValid = false;
-                }
-            }
-        }
-    });
-    
-    return isValid;
-}
-
-// Show error message
-function showError(input, message) {
-    const formGroup = input.closest('.form-group');
-    let errorElement = formGroup.querySelector('.error-message');
-    
-    if (!errorElement) {
-        errorElement = document.createElement('div');
-        errorElement.className = 'error-message';
-        formGroup.appendChild(errorElement);
-    }
-    
-    errorElement.textContent = message;
-    input.classList.add('error');
-}
 
 // FAQ Accordion
 function initFaqAccordion() {
@@ -120,7 +43,7 @@ function initFaqAccordion() {
 }
 
 // File Upload Preview
-document.addEventListener('DOMContentLoaded', function() {
+function initFileUploadPreview() {
     const fileInput = document.getElementById('reference-images');
     
     if (!fileInput) return;
@@ -236,4 +159,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-});
+}
