@@ -74,39 +74,15 @@ function initContactForm() {
     if (!contactForm) return;
     
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // In a real implementation, you would send the form data to a server
-        // For now, we'll just show a success message
-        
-        // Validate form
-        if (validateForm(this)) {
-            // Show success message
-            const formContent = this.querySelector('.form-content');
-            const successMessage = document.createElement('div');
-            successMessage.className = 'success-message';
-            successMessage.innerHTML = `
-                <div class="success-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <h3>Thank You!</h3>
-                <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
-                <button class="btn btn-primary reset-form">Send Another Message</button>
-            `;
-            
-            formContent.innerHTML = '';
-            formContent.appendChild(successMessage);
-            
-            // Add event listener to reset form button
-            const resetButton = formContent.querySelector('.reset-form');
-            if (resetButton) {
-                resetButton.addEventListener('click', function() {
-                    contactForm.reset();
-                    formContent.innerHTML = '';
-                    contactForm.appendChild(document.querySelector('.form-content-original').cloneNode(true));
-                });
-            }
+        // Only prevent default if validation fails
+        if (!validateForm(this)) {
+            e.preventDefault();
+            return false;
         }
+        
+        // If validation passes, let the form submit to Netlify
+        // Netlify will handle the form submission and redirect
+        return true;
     });
     
     // Clone original form content for reset functionality

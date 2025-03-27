@@ -1,0 +1,33 @@
+# Netlify configuration file for Blush & Bloom website
+
+# Build settings
+[build]
+  publish = "/"  # The directory to publish (root in this case)
+
+# Form handling settings
+[build.processing.html]
+  pretty_urls = true
+
+# Redirect settings for form submissions
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+  conditions = {Role = ["anonymous"]}
+
+# Success page redirect
+[[redirects]]
+  from = "/success"
+  to = "/success.html"
+  status = 200
+
+# Headers to improve security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https: data:; connect-src 'self' https:; media-src 'self' https:; object-src 'none'; frame-src 'self' https:; worker-src 'self' https:; form-action 'self' https:; base-uri 'self'; manifest-src 'self'"
