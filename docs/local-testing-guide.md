@@ -109,7 +109,7 @@ We've included a `form-test.js` script that provides a local form testing experi
 3. **What to Verify**:
    - All form fields are captured correctly
    - Required fields are enforced
-   - The form name matches what you expect (`contact-blush-bloom` or `quick-contact`)
+   - The form name matches what you expect (`contact-blush-bloom` or `contact-blush-bloom`)
    - File uploads are detected (though not actually uploaded in test mode)
 
 4. **Form Validation**:
