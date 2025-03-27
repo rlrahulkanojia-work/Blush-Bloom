@@ -85,17 +85,37 @@ If you're using Visual Studio Code:
 
 ## Testing Forms Locally
 
-Netlify Forms requires deployment to Netlify to fully function. However, you can still test form validation locally:
+Netlify Forms requires deployment to Netlify to fully function. However, we've added a special form testing script that allows you to verify form submissions locally:
 
-1. **Form Validation**:
-   - Fill out the forms with valid and invalid data
-   - Check that validation errors appear appropriately
-   - Verify required fields are enforced
+### Using the Form Test Script
 
-2. **Form Submission Simulation**:
-   - When using a local server, the form will attempt to submit to `/success.html`
-   - You'll be redirected to the success page, but no data will be captured
-   - This confirms the form submission flow works, even though data isn't stored
+We've included a `form-test.js` script that provides a local form testing experience:
+
+1. **How It Works**:
+   - The script automatically detects when you're running the site locally
+   - It intercepts form submissions and prevents them from being sent (since they would fail anyway)
+   - It displays the form data that would be sent to Netlify
+   - It logs all form data to the browser console for inspection
+
+2. **Testing Steps**:
+   - Start your local server (using any of the methods described earlier)
+   - Navigate to a page with a form (contact.html or index.html)
+   - Fill out the form with test data
+   - Submit the form
+   - You'll see a success message showing the form was intercepted
+   - Open your browser's developer console (F12 or right-click > Inspect > Console)
+   - You'll see the form data logged in the console
+
+3. **What to Verify**:
+   - All form fields are captured correctly
+   - Required fields are enforced
+   - The form name matches what you expect (`contact-blush-bloom` or `quick-contact`)
+   - File uploads are detected (though not actually uploaded in test mode)
+
+4. **Form Validation**:
+   - The script still allows you to test client-side validation
+   - Try submitting the form without filling required fields
+   - Verify that validation errors appear appropriately
 
 ## Testing Responsive Design
 
