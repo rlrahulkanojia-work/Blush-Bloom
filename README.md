@@ -6,7 +6,7 @@
 
 Blush & Bloom is a professional website for a premium makeup services business. The site showcases the company's portfolio, services, team, and provides easy ways for clients to get in touch and book appointments.
 
-**Tagline:** "Unveil Your Radiance"
+**Tagline:** "By Neha Gupta"
 
 ## Features
 

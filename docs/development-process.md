@@ -29,7 +29,7 @@ I began by analyzing the product definition document, which outlined:
 - Website structure (pages and sections)
 - Technical specifications (frontend, backend, image management, booking system)
 
-The key insight was that Blush & Bloom is a premium makeup service focusing on personalized, high-quality makeup for special occasions, with "Unveil Your Radiance" as their tagline.
+The key insight was that Blush & Bloom is a premium makeup service focusing on personalized, high-quality makeup for special occasions, with "By Neha Gupta" as their tagline.
 
 ## Planning & Architecture
 
